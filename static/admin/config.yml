@@ -11,7 +11,7 @@ collections:
     folder: "src/pages/games"
     create: true
     fields:
-      - {label: "Name", name: "gameName", widget: "string}
+      - {label: "Name", name: "gameName", widget: "string"}
       - label: "Stats"
         name: "gameStats"
         widget: "list"
