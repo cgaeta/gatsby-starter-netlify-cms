@@ -15,7 +15,9 @@ collections:
       - label: "Stats"
         name: "gameStats"
         widget: "list"
-        default: ["Ex1", "Ex2", "Ex3"]
+        fields:
+        - {label: "Name", name: "statName", widget: "string"}
+        - {label: "Default", name: "statDefault", widget: "number", default: "10"}
   
   - name: "blog"
     label: "Blog"
