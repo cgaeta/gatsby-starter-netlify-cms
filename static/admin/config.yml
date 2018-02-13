@@ -6,6 +6,20 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "games"
+    label: "Games"
+    folder: "src/pages/games"
+    create: true
+    fields:
+      - {label: "Name", name: "gameName", widget: "string}
+      - label: "Stats"
+        name: "gameStats"
+        widget: "list"
+        fields:
+          - label: "Name"
+            name: "stat"
+            widget: "text"
+  
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
