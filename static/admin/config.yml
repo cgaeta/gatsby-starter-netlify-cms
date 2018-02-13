@@ -16,9 +16,7 @@ collections:
         name: "gameStats"
         widget: "list"
         field:
-          - label: "Name"
-            name: "stat"
-            widget: "text"
+          - {label: "Name", name: "stat", widget: "string"}
   
   - name: "blog"
     label: "Blog"
