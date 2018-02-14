@@ -12,6 +12,7 @@ collections:
     create: true
     fields:
       - {label: "title", name: "title", widget: "string"}
+      - {label: "Export to Medium", name: "mediumExport", widget: "hidden", default: false}
       - label: "Stats"
         name: "gameStats"
         widget: "list"
