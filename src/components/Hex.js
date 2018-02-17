@@ -5,8 +5,8 @@ const sixtyDeg = Math.PI / 3;
 //const Hex = ({src = "", title = "Test", text = "Hi", n = 5}) => {
 const Hex = (props) => {
 
-  let {entry} = props;
-  let {data} = entry;
+  //let {entry} = props;
+  //let {data} = entry;
   //let {src, title, text, n} = data;
   let src = "",
       title = "Title",
