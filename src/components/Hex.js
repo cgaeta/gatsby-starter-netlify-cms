@@ -8,10 +8,7 @@ const Hex = (props) => {
   let {entry} = props;
   let {data} = entry;
   //let {src, title, text, n} = data;
-  let src = "",
-      title = "Title",
-      text = "Text",
-      n = 5;
+  let {src = "", title = "Title", text = "Text", n = 2};
   
   return (
   <div className="hex" style={{
@@ -19,8 +16,8 @@ const Hex = (props) => {
     outline: "1px solid transparent",
     width: `calc(100% / 2)`
   }}>
-    <pre>{JSON.stringify(props, null, 2)}</pre>
     <pre>{JSON.stringify(entry, null, 2)}</pre>
+    <pre>{JSON.stringify(data, null, 2)}</pre>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
