@@ -18,7 +18,7 @@ const Hex = ({data}) => {
   }}>
     <p className="test" style={{
       position: "absolute"
-    }}><pre>{JSON.stringify(props, null, 2)}</pre></p>
+    }}><pre>{JSON.stringify(data, null, 2)}</pre></p>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
