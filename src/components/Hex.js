@@ -2,7 +2,7 @@ import React from 'react';
 
 const sixtyDeg = Math.PI / 3;
 
-//const Hex = ({src, title, text, n}) => {
+//const Hex = ({src = "", title = "Test", text = "Hi", n = 5}) => {
 const Hex = (props) => {
 
   return (
