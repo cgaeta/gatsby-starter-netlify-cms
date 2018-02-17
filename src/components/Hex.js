@@ -7,6 +7,7 @@ const Hex = (props) => {
 
   let {entry} = props;
   let {data} = entry;
+  let src = "", title = "Title", text = "text", n = 2;
   //let {src, title, text, n} = data;
   //let {src = "", title = "Title", text = "Text"} = data,
   //    n = 2;
