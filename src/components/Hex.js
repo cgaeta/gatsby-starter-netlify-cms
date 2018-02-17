@@ -13,7 +13,7 @@ const Hex = (props) => {
     position: "relative",
     //visibility: "hidden",
     outline: "1px solid transparent",
-    width: `calc(100% / ${n})`
+    width: `calc(100% / 2)`
   }}>
     <pre>{props}</pre>
     <div className="hexIn" style={{
