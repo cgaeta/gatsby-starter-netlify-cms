@@ -30,7 +30,7 @@ collections:
       - {label: "title", name: "title", widget: "string"}
       - {label: "Image", name: "src", widget: "image"}
       - {label: "Text", name: "text", widget: "text"}
-      - {label: "Number of Hexes", name: "n", widget: "hidden", default: 5}
+      - {label: "N", name: "n", widget: "number", default: 5}
       
   - name: "blog"
     label: "Blog"
