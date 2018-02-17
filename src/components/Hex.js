@@ -12,9 +12,9 @@ const Hex = (props) => {
     outline: "1px solid transparent",
     width: `calc(100% / ${n})`
   }}>
-    <pre style={{
+    <p className="test" style={{
       position: "absolute"
-    }}>{JSON.stringify(props, null, 2)}</pre>
+    }}>{JSON.stringify(props, null, 2)}</p>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
