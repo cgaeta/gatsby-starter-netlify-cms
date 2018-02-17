@@ -7,7 +7,7 @@ const Hex = (props) => {
 
   let {entry} = props;
   let {data} = entry;
-  let {src, title, text, n} = data;
+  //let {src, title, text, n} = data;
   return (
   <div className="hex" style={{
     position: "relative",
