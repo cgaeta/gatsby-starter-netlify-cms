@@ -21,7 +21,17 @@ collections:
         fields:
         - {label: "Name", name: "statName", widget: "string"}
         - {label: "Default", name: "statDefault", widget: "number", valueType: "int", default: 10, min: 3, max: 20}
-  
+        
+  - name: "hex"
+    label: "Hex"
+    folder: "src/data/hexes"
+    create: true
+    fields:
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "Image", name: "src", widget: "image"}
+      - {label: "Text", name: "text", widget: "text"}
+      - {label: "Number of Hexes", name: "n", widget: "hidden"}
+      
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
