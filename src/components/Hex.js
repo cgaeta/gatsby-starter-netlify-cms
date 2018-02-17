@@ -3,12 +3,8 @@ import React from 'react';
 const sixtyDeg = Math.PI / 3;
 
 //const Hex = ({src = "", title = "Test", text = "Hi", n = 5}) => {
-const Hex = (props) => {
+const Hex = ({entry: {data: {src, title, text, n}}}) => {
 
-  let src = "",
-      title = "Test",
-      text = "Hi",
-      n = 5;
   return (
   <div className="hex" style={{
     position: "relative",
@@ -16,9 +12,6 @@ const Hex = (props) => {
     outline: "1px solid transparent",
     width: `calc(100% / ${n})`
   }}>
-    <p className="test" style={{
-      position: "absolute"
-    }}><pre>{JSON.stringify(props, null, 2)}</pre></p>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
