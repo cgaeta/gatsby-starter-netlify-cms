@@ -3,15 +3,19 @@ import React from 'react';
 const sixtyDeg = Math.PI / 3;
 
 //const Hex = ({src = "", title = "Test", text = "Hi", n = 5}) => {
-const Hex = ({entry: {data: {src, title, text, n}}}) => {
+const Hex = (props) => {
 
+  let {entry} = props;
+  let {data} = entry;
+  let {src, title, text, n} = data;
   return (
   <div className="hex" style={{
     position: "relative",
-    visibility: "hidden",
+    //visibility: "hidden",
     outline: "1px solid transparent",
     width: `calc(100% / ${n})`
   }}>
+    <pre>{props}</pre>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
