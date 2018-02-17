@@ -5,6 +5,10 @@ const sixtyDeg = Math.PI / 3;
 //const Hex = ({src = "", title = "Test", text = "Hi", n = 5}) => {
 const Hex = (props) => {
 
+  let src = "",
+      title = "Test",
+      text = "Hi",
+      n = 5;
   return (
   <div className="hex" style={{
     position: "relative",
