@@ -22,9 +22,9 @@ const Hex = ({src, title, text, n}) => {
       outline: "1px solid transparent"
     }}>
       <div className="hexLink" style={{
-        position: absolute,
+        position: "absolute",
         visibility: "visible",
-        outline: 1px solid transparent
+        outline: "1px solid transparent"
       }}>
         <img src={src} style={{
           position: "absolute",
