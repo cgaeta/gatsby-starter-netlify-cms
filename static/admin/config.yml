@@ -32,6 +32,20 @@ collections:
       - {label: "Text", name: "text", widget: "text"}
       - {label: "N", name: "n", widget: "number", default: 5}
       
+  - name: "hexGrid"
+    label: "Hex Grid"
+    folder: "src/data/hexGrids"
+    create: true
+    fields:
+      - {label: "N", name: "n", widget: "number", default: 5}
+      - label: "Hexes"
+        name: "hexes
+        widget: "list"
+        fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Image", name: "src", widget: "image"}
+        - {label: "Text", name: "text", widget: "text"}
+      
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
