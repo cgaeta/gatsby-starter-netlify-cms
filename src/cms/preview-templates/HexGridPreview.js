@@ -1,5 +1,5 @@
 import React from 'react';
-import Hex from '../../components/HexGrid.js';
+import Hex from '../../components/Hex.js';
 
 const HexGridPreview = ({ entry }) => {
   let test = entry.getIn(['data', 'hexes']);
@@ -8,4 +8,4 @@ const HexGridPreview = ({ entry }) => {
   )
 };
 
-export default HexPreview;
+export default HexGridPreview;
