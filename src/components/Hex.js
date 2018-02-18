@@ -2,14 +2,15 @@ import React from 'react';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = ({src, title, text, n}) => {
+const Hex = ({src, title, text, n, indent}) => {
   
   return (
   <div className="hex" style={{
     position: "relative",
     outline: "1px solid transparent",
-    width: `calc(100% / 2)`,
-    visibility: "hidden"
+    width: `calc(100% / ${n})`,
+    visibility: "hidden",
+    marginLeft: (indent ? `calc(100% / (${n}*2))` : "0"
   }}>
     <div className="hexIn" style={{
       position: "absolute",
