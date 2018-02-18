@@ -2,7 +2,7 @@ import React from 'react';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = (props) => {
+const Hex = ({src, title, text, n}) => {
   
   return (
   <div className="hex" style={{
