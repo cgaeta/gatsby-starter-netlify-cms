@@ -8,7 +8,8 @@ const Hex = ({src, title, text, n}) => {
   <div className="hex" style={{
     position: "relative",
     outline: "1px solid transparent",
-    width: `calc(100% / 2)`
+    width: `calc(100% / 2)`,
+    visibility: "hidden"
   }}>
     <div className="hexIn" style={{
       position: "absolute",
@@ -20,8 +21,21 @@ const Hex = ({src, title, text, n}) => {
       transform: "rotate3d(0,0,1, -60deg) skewY(30deg)",
       outline: "1px solid transparent"
     }}>
-      <div className="hexLink">
-        <img src={src} alt />
+      <div className="hexLink" style={{
+        position: absolute,
+        visibility: "visible",
+        outline: 1px solid transparent
+      }}>
+        <img src={src} style={{
+          position: "absolute",
+          visibility: "visible",
+          left: "-100%",
+          right: "-100%",
+          width: "auto",
+          height: "auto",
+          margin: "0 auto",
+          transform: "rotate3d(0,0,0,0deg)"
+        }} alt />
         <h1>{title}</h1>
         <p>{text}</p>
       </div>
