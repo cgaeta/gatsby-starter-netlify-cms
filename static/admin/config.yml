@@ -37,6 +37,7 @@ collections:
     folder: "src/data/hexGrids"
     create: true
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "N", name: "n", widget: "number", default: 5}
       - label: "Hexes"
         name: "hexes"
