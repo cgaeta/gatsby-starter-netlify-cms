@@ -41,7 +41,7 @@ const Hex = ({src, title, text, n}) => {
           width: "auto",
           height: "auto",
           margin: "0 auto",
-          transform: "rotate3d(0,0,0,0deg)"
+          transform: "rotate3d(0,0,1,0deg)"
         }} alt />
         <h1>{title}</h1>
         <p>{text}</p>
