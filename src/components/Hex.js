@@ -31,7 +31,7 @@ const Hex = ({src, title, text, n}) => {
         textAlign: "center",
         color: "#ffffff",
         overflow: "hidden",
-        transform: "skewY(-30deg) rotate3d(0,0,0,60deg)"
+        transform: "skewY(-30deg) rotate3d(0,0,1,60deg)"
       }}>
         <img src={src} style={{
           position: "absolute",
