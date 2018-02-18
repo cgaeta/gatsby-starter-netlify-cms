@@ -7,7 +7,7 @@ const HexGridPreview = ({ entry }) => {
   return (
     <div>
       <pre>{JSON.stringify(test, null, 2)}</pre>
-      {hexes.map(hex =>
+      {hexes.toJS().map(hex =>
         <pre>{JSON.stringify(hex, null, 2)}</pre>
       )}
     </div>
