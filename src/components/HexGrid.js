@@ -7,7 +7,9 @@ const HexGrid = ({hexes, n}) => {
       display: "flex"
     }}>
       {hexes.map(hex =>
-        <Hex {...hex} n={n} />
+        <Hex {...hex} n={n} style={{
+          backgroundColor: "red"
+        }}/>
       )}
     </div>
   )
