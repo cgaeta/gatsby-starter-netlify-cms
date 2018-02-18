@@ -6,10 +6,8 @@ const HexGrid = ({hexes, n}) => {
     <div className="hexGrid" style={{
       display: "flex"
     }}>
-      {hexes.map(hex =>
-        <Hex {...hex} n={n} style={{
-          backgroundColor: "red"
-        }}/>
+      {hexes.map((hex, i) =>
+        <Hex {...hex} n={n} indent={i % (n+1) === n}/>
       )}
     </div>
   )
