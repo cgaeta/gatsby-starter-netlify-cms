@@ -1,13 +1,8 @@
 import React from 'react';
 import { Hex } from '../../components/Hex.js';
 
-const HexPreview = ({ entry, widgetFor }) => (
-  <Hex
-    src={entry.getIn(['data', 'src'])}
-    text={entry.getIn(['data', 'text'])}
-    title={entry.getIn(['data', 'title'])}
-    n={entry.getIn(['data', 'n'])}
-  />
+const HexPreview = ({ entry }) => (
+  <pre>{JSON.stringify(entry, null, 2)}</pre>
 );
 
 export default HexPreview;
