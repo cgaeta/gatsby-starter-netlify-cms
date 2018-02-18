@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hex } from '../../components/Hex.js';
+import Hex from '../../components/Hex.js';
 
 const HexPreview = ({ entry }) => {
   return (
