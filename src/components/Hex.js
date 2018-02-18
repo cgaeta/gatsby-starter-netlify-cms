@@ -24,7 +24,14 @@ const Hex = ({src, title, text, n}) => {
       <div className="hexLink" style={{
         position: "absolute",
         visibility: "visible",
-        outline: "1px solid transparent"
+        outline: "1px solid transparent",
+        display: "block",
+        width: "100%",
+        height: "100%",
+        textAlign: "center",
+        color: "#ffffff",
+        overflow: "hidden",
+        transform: "skewY(-30deg) rotate3d(0,0,0,60deg)"
       }}>
         <img src={src} style={{
           position: "absolute",
