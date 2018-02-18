@@ -10,7 +10,6 @@ const Hex = ({src, title, text, n}) => {
     outline: "1px solid transparent",
     width: `calc(100% / 2)`
   }}>
-    <pre>{JSON.stringify(props, null, 2)}</pre>
     <div className="hexIn" style={{
       position: "absolute",
       width: "96%",
