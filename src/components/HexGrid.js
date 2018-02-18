@@ -10,3 +10,5 @@ const HexGrid = ({hexes, n}) => {
     </div>
   )
 }
+
+export default HexGrid;
