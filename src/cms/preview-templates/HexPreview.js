@@ -8,7 +8,7 @@ const HexPreview = ({ entry }) => {
     text: entry.getIn(['data', 'text']),
     title: entry.getIn(['data', 'title']),
     n: entry.getIn(['data', 'n'])
-  />
+  };
   
   return (
     <pre>{JSON.stringify(test, null, 2)}</pre>
