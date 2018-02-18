@@ -39,7 +39,7 @@ collections:
     fields:
       - {label: "N", name: "n", widget: "number", default: 5}
       - label: "Hexes"
-        name: "hexes
+        name: "hexes"
         widget: "list"
         fields:
         - {label: "Title", name: "title", widget: "string"}
