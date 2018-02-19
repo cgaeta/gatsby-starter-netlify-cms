@@ -3,7 +3,7 @@ import HexGrid from './HexGrid.js';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = ({src, title, text, hexes, n, indent}) => {
+const Hex = ({src, title, text, hexes = [], n, indent}) => {
   
   return (
   <div className="hex" style={{
