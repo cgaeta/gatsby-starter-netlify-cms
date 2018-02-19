@@ -40,7 +40,7 @@ const Hex = ({src, title, text, n, indent}) => {
           left: "-100%",
           right: "-100%",
           width: "auto",
-          height: "auto",
+          height: "100%",
           margin: "0 auto",
           transform: "rotate3d(0,0,1,0deg)"
         }} alt />
