@@ -4,7 +4,7 @@ import HexGrid from '../../components/HexGrid.js';
 
 const HexGridPreview = ({ entry }) => {
   return (
-    <HexGrid hexes={entry.getIn(['data', 'hexes']).toJS()} n={entry.getIn(['data', 'n'])} />
+    <HexGrid hexes={entry.getIn(['data', 'hexes']).toJS() || []} n={entry.getIn(['data', 'n']) || 5} />
   )
 };
 
