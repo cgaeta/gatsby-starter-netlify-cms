@@ -44,7 +44,7 @@ collections:
         widget: "list"
         fields:
         - {label: "Title", name: "title", widget: "string"}
-        - {label: "Image", name: "src", widget: "image"}
+        - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
         - {label: "Text", name: "text", widget: "text"}
       
   - name: "blog"
