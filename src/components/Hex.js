@@ -5,19 +5,19 @@ import './Hex.scss';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = ({src, title, text, hexes = [], n, indent}) => {
+const Hex = ({src, title, text, hexes = [], size, count, indent}) => {
 
   return (
   <div className="hex" style={{
-    width: `calc(100% / ${n})`,
-    marginLeft: (indent ? `calc(100% / (${n}*2))` : "0")
+    width: `calc(100% / ${size})`,
+    marginLeft: (indent ? `calc(100% / (${size}*2))` : "0")
   }}>
     <div className="hexIn" style={{
       paddingBottom: `calc(96% / ${Math.sin(sixtyDeg)})`,
     }}>
       <div className="hexLink">
         <div className="nestedGrid">
-          <HexGrid hexes={hexes} n={n} />
+          <HexGrid hexes={hexes} count={count} />
         </div>
         <img src={src} alt />
         <h1>{title}</h1>

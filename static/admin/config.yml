@@ -1,7 +1,7 @@
-backend:
+sizebackend:
   name: git-gateway
   branch: master
-  
+
 publish_mode: editorial_workflow
 
 media_folder: static/img
@@ -21,7 +21,7 @@ collections:
         fields:
         - {label: "Name", name: "statName", widget: "string"}
         - {label: "Default", name: "statDefault", widget: "number", valueType: "int", default: 10, min: 3, max: 20}
-        
+
   - name: "hex"
     label: "Hex"
     folder: "src/data/hexes"
@@ -30,15 +30,16 @@ collections:
       - {label: "title", name: "title", widget: "string"}
       - {label: "Image", name: "src", widget: "image"}
       - {label: "Text", name: "text", widget: "text"}
-      - {label: "N", name: "n", widget: "number", default: 5}
-      
+      - {label: "Size", name: "size", widget: "number", default: 2}
+
   - name: "hexGrid"
     label: "Hex Grid"
     folder: "src/data/hexGrids"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "N", name: "n", widget: "number", default: 5}
+      - {label: "Count", name: "count", widget: "number", default: 2}
+      - {label: "Alternate", name: "alt", widget: "boolean", default: false}
       - label: "Hexes"
         name: "hexes"
         widget: "list"
@@ -46,6 +47,8 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
         - {label: "Text", name: "text", widget: "text"}
+        - {label: "Alternate", name: "alt", widget: "boolean", default: false}
+        - {label: "Count", name: "count", widget: "number", default: 2}
         - label: "Hexes"
           name: "hexes"
           widget: "list"
@@ -53,7 +56,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
           - {label: "Text", name: "text", widget: "text"}
-      
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
