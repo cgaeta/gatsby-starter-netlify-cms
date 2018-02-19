@@ -5,7 +5,7 @@ import './Hex.scss';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = ({src, title, text, hexes = [], size, count, indent, alternate}) => {
+const Hex = ({src, title, text, hexes = [], size, count, indent, alt}) => {
 
   return (
   <div className="hex" style={{
@@ -20,7 +20,7 @@ const Hex = ({src, title, text, hexes = [], size, count, indent, alternate}) => 
           <HexGrid
             hexes={hexes}
             count={count}
-            alternate={alternate} />
+            alt={alt} />
         </div>
         <img src={src} alt />
         <h1>{title}</h1>
