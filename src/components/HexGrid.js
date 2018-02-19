@@ -1,7 +1,7 @@
 import React from 'react';
 import Hex from './Hex.js';
 
-const HexGrid = ({hexes, n}) => {
+const HexGrid = ({hexes = [], n}) => {
   n = parseInt(n, 10);
   return (
     <div className="hexGrid" style={{
