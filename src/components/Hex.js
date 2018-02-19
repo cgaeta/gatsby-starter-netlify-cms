@@ -1,8 +1,9 @@
 import React from 'react';
+import HexGrid from './HexGrid.js';
 
 const sixtyDeg = Math.PI / 3;
 
-const Hex = ({src, title, text, n, indent}) => {
+const Hex = ({src, title, text, hexes, n, indent}) => {
   
   return (
   <div className="hex" style={{
@@ -46,6 +47,12 @@ const Hex = ({src, title, text, n, indent}) => {
         }} alt />
         <h1>{title}</h1>
         <p>{text}</p>
+        <div style={{
+          position: "absolute",
+          visibility: "visible"
+        }}>
+          <HexGrid hexes={hexes} n={n} />
+        </div>
       </div>
     </div>
     <div className="hexAfter" style={{
