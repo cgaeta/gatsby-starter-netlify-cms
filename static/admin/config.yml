@@ -46,6 +46,13 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
         - {label: "Text", name: "text", widget: "text"}
+        - label: "Hexes"
+          name: "hexes"
+          widget: "list"
+          fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
+          - {label: "Text", name: "text", widget: "text"}
       
   - name: "blog"
     label: "Blog"
