@@ -50,7 +50,7 @@ const Hex = ({src, title, text, n, indent}) => {
     </div>
     <div className="hexAfter" style={{
       display: "block",
-      paddingBottom: `calc(100% / ${Math.tan(sixtyDeg)})`
+      paddingBottom: `calc(100% / ${Math.tan(sixtyDeg)} * 1.5)`
     }}>
     </div>
   </div>
