@@ -1,0 +1,52 @@
+.hex {
+  position: relative;
+  outline: 1px solid transparent;
+  visibility: hidden;
+
+  .hexIn {
+    position: absolute;
+    width: 96%;
+    margin: 0 2%;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+            transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    outline: 1px solid transparent;
+
+    .hexLink {
+      position: absolute;
+      visibility: visible;
+      outline: 1px solid transparent;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #ffffff;
+      overflow: hidden;
+      -webkit-transform: skewY(-30deg) rotate3d(0,0,1, 60deg);
+              transform: skewY(-30deg) rotate3d(0,0,1, 60deg);
+
+      img {
+        position: absolute;
+        visibility: visible;
+        left: -100%;
+        right: -100%;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        -webkit-transform: rotate3d(0,0,0,0deg);
+                transform: rotate3d(0,0,0,0deg);
+      }
+
+      .nestedGrid {
+        position: absolute;
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
+
+  .hexAfter {
+    display: block;
+  }
+}
