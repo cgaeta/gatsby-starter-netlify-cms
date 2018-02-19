@@ -7,8 +7,10 @@ const HexGrid = ({hexes, n}) => {
       display: "flex",
       flexWrap: "wrap"
     }}>
-      {hexes.map((hex, i) =>
-        <Hex {...hex} n={n} indent={i % (n+1) === n}/>
+      {hexes.map((hex, i) => {
+          console.log("building hex:", i, "indent?", (i % (n+1) === n));
+          return <Hex {...hex} n={n} indent={i % (n+1) === n}/>
+        }
       )}
     </div>
   )
