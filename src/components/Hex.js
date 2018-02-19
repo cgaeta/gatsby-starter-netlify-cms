@@ -16,12 +16,12 @@ const Hex = ({src, title, text, hexes = [], n, indent}) => {
       paddingBottom: `calc(96% / ${Math.sin(sixtyDeg)})`,
     }}>
       <div className="hexLink">
-        <img src={src} alt />
-        <h1>{title}</h1>
-        <p>{text}</p>
         <div className="nestedGrid">
           <HexGrid hexes={hexes} n={n} />
         </div>
+        <img src={src} alt />
+        <h1>{title}</h1>
+        <p>{text}</p>
       </div>
     </div>
     <div className="hexAfter" style={{
