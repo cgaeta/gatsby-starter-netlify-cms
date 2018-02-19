@@ -18,7 +18,7 @@ const HexGrid = ({hexes = [], count, alt}) => {
           return <Hex
             {...hex}
             size={count}
-            indent={alt ? shortLong(i,n) : longShort(i,n)}/>
+            indent={alt ? shortLong(i,count) : longShort(i,count)}/>
         }
       )}
     </div>
