@@ -19,7 +19,7 @@ const Hex = ({src, title, text, hexes = [], size, count, indent, alternate}) => 
         <div className="nestedGrid">
           <HexGrid
             hexes={hexes}
-            count={count},
+            count={count}
             alternate={alternate} />
         </div>
         <img src={src} alt />
