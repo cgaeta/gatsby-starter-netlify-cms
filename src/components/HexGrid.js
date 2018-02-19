@@ -11,7 +11,7 @@ const HexGrid = ({hexes = [], n}) => {
       {hexes.map((hex, i) => {
           console.log("building hex:", i+1, "indent?", ((i+1) % (2*n-1) === n+1));
           console.log("n:", n, "(i+1) % (2*n-1)", (i+1) % (2*n-1), "n+1", n+1, "((i+1) % (2*n-1) === n+1):", ((i+1) % (2*n-1) === n+1));
-          return <Hex {...hex} n={n} indent={(i+1) % (2*n-1) === (n < 2 ? 0 : n+1)}/>
+          return <Hex {...hex} n={n} indent={(i+1) % (2*n-1) === (n < 3 ? 0 : n+1)}/>
         }
       )}
     </div>
