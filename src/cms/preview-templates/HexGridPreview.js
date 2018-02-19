@@ -8,7 +8,7 @@ const HexGridPreview = ({ entry }) => {
   return (
     <HexGrid
       hexes={hexes}
-      n={entry.getIn(['data', 'n']) || 5}
+      count={entry.getIn(['data', 'count']) || 5}
       alt={entry.getIn(['data', 'alt']) || false} />
   )
 };

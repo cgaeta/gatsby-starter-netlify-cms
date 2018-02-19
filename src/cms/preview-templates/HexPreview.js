@@ -7,7 +7,8 @@ const HexPreview = ({ entry }) => {
       src={entry.getIn(['data', 'src'])}
       text={entry.getIn(['data', 'text'])}
       title={entry.getIn(['data', 'title'])}
-      n={entry.getIn(['data', 'n'])} />
+      count={entry.getIn(['data', 'count'])} />
+      size={entry.getIn(['data', 'size'])} />
   )
 };
 
