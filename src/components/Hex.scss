@@ -41,7 +41,7 @@
       }
 
       .nestedGrid {
-        position: absolute;
+        position: relative;
         visibility: visible;
         width: 100%;
       }
@@ -52,7 +52,13 @@
     display: block;
   }
 
-  :hover img {
-    opacity: 0;
+  :hover {
+    img {
+      opacity: 0;
+    }
+
+    .nestedGrid img {
+      opacity: 1;
+    }
   }
 }
