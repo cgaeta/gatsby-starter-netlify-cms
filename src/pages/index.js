@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
         "Content-Type": "application/x-www-form-urlencoded"
       },
       body: encode({
-        "form-name": "test2",
+        "form-name": e.target.name,
         ...this.state
       })
     }).then(() => console.log("Success!"))
