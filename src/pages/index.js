@@ -17,7 +17,8 @@ export default class IndexPage extends React.Component {
   }
 
   handleChange = ({target: {name, value}}) => {
-    this.setState({[name]: value});
+    this.setState({name: value});
+    console.log('state: ', this.state, name, value);
   }
 
   handleScriptLoad() {
