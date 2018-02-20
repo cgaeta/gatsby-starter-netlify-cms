@@ -38,6 +38,8 @@ export default class IndexPage extends React.Component {
   }
 
   handleSubmit = e => {
+
+    console.log("sending form", ...this.state);
     fetch("/", {
       method: "POST",
       headers: {
