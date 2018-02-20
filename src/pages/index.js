@@ -20,7 +20,7 @@ export default class IndexPage extends React.Component {
     let {target} = e;
     let {name, value} = target;
     console.log('event: ', e, target, name, value);
-    this.setState({name: value});
+    this.setState({[name]: value});
     console.log('state: ', this.state, name, value);
   }
 
