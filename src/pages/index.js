@@ -27,8 +27,9 @@ export default class IndexPage extends React.Component {
         />
         <div className="container">
           <div className="content">
-            <form name="test" netlify>
+            <form name="test" data-netlify="true" netlify-honeypot="confirmEmail">
               <label>Name: <input type="text" name="name" /></label>
+              <input type="email" name="confirmEmail" style="display: none;" />
               <input type="submit" value="Go" />
             </form>
           </div>
