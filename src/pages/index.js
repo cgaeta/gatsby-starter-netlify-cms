@@ -67,7 +67,7 @@ export default class IndexPage extends React.Component {
           <div className="content">
             <form
               method="post"
-              name="test"
+              name="test2"
               data-netlify="true"
               data-netlify-honeypot="bottrap"
               onSubmit={this.handleSubmit}
