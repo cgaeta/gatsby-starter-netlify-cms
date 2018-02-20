@@ -27,10 +27,12 @@ export default class IndexPage extends React.Component {
         />
         <div className="container">
           <div className="content">
-            <form name="test" data-netlify="true" netlify-honeypot="confirmEmail">
+            <form name="test" data-netlify="true" netlify-honeypot="bottrap">
               <label>Name: <input type="text" name="name" /></label>
-              <input type="email" name="confirmEmail" style={{display: "none"}} />
-              <input type="submit" value="Go" />
+              <label>Email: <input type="email" name="email" /></label>
+              <label>Message: <textarea name="message"></textarea></label>
+              <input type="text" name="bottrap" style={{display: "none"}} />
+              <button type="submit">Go</button>
             </form>
           </div>
         </div>
