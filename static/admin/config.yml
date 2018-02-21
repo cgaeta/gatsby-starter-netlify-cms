@@ -8,51 +8,69 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "games"
-    label: "Games"
-    folder: "src/data/games"
-    create: true
+- name: "games"
+  label: "Games"
+  folder: "src/data/games"
+  create: true
+  fields:
+  - {label: "title", name: "title", widget: "string"}
+  - {label: "Export to Medium", name: "mediumExport", widget: "hidden", default: false}
+  - label: "Stats"
+    name: "gameStats"
+    widget: "list"
     fields:
-      - {label: "title", name: "title", widget: "string"}
-      - {label: "Export to Medium", name: "mediumExport", widget: "hidden", default: false}
-      - label: "Stats"
-        name: "gameStats"
-        widget: "list"
-        fields:
-        - {label: "Name", name: "statName", widget: "string"}
-        - {label: "Default", name: "statDefault", widget: "number", valueType: "int", default: 10, min: 3, max: 20}
+    - {label: "Name", name: "statName", widget: "string"}
+    - {label: "Default", name: "statDefault", widget: "number", valueType: "int", default: 10, min: 3, max: 20}
 
-  - name: "hex"
-    label: "Hex"
-    folder: "src/data/hexes"
-    create: true
-    fields:
-      - {label: "title", name: "title", widget: "string"}
-      - {label: "Image", name: "src", widget: "image"}
-      - {label: "Text", name: "text", widget: "text"}
-      - {label: "Size", name: "size", widget: "number", default: 2}
+- name: "hex"
+  label: "Hex"
+  folder: "src/data/hexes"
+  create: true
+  fields:
+  - {label: "title", name: "title", widget: "string"}
+  - {label: "Image", name: "src", widget: "image"}
+  - {label: "Text", name: "text", widget: "text"}
+  - {label: "Size", name: "size", widget: "number", default: 2}
 
-  - name: "hexGrid"
-    label: "Hex Grid"
-    folder: "src/data/hexGrids"
-    create: true
+- name: "hexGrid"
+  label: "Hex Grid"
+  folder: "src/data/hexGrids"
+  create: true
+  fields:
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Count", name: "count", widget: "number", default: 2}
+  - {label: "Alternate", name: "alt", widget: "boolean", default: false}
+  - label: "Hexes"
+    name: "hexes"
+    widget: "list"
     fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
+    - {label: "Text", name: "text", widget: "text"}
+    - {label: "Alternate", name: "alt", widget: "boolean", default: false}
+    - {label: "Count", name: "count", widget: "number", default: 2}
+    - label: "Hexes"
+      name: "hexes"
+      widget: "list"
+      fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Count", name: "count", widget: "number", default: 2}
-      - {label: "Alternate", name: "alt", widget: "boolean", default: false}
-      - label: "Hexes"
-        name: "hexes"
-        widget: "list"
-        fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
-        - {label: "Text", name: "text", widget: "text"}
-        - {label: "Alternate", name: "alt", widget: "boolean", default: false}
-        - {label: "Count", name: "count", widget: "number", default: 2}
-        - label: "Hexes"
-          name: "hexes"
-          widget: "list"
-          fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
-          - {label: "Text", name: "text", widget: "text"}
+      - {label: "Image", name: "src", widget: "image", default: "/img/coffee-gear.png"}
+      - {label: "Text", name: "text", widget: "text"}
+
+- name: "navbar"
+  label: "Navbar"
+  fields:
+  - {label: "Title", name: "title", widget: "string"}
+  - label: "Brand"
+    name: "brand"
+    widget: "object"
+    fields:
+    - {label: "Name", name: "name", widget: "string"}
+    - {label: "Image", name: "img", widget: "image"}
+    - {label: "URL", name: "url", widget: "string"}
+  - label: "Links"
+    name: "links"
+    widget: "list"
+    fields:
+    - {label: "Text", name: "text", widget: "string"}
+    - {label: "URL", name: "url", widget: "string"}
