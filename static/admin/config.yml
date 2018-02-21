@@ -59,18 +59,22 @@ collections:
 
 - name: "navbar"
   label: "Navbar"
-  fields:
-  - {label: "Title", name: "title", widget: "string"}
-  - label: "Brand"
-    name: "brand"
-    widget: "object"
+  files:
+  - label: "Main Navbar"
+    name: "main"
+    file: "data/navbar.json"
     fields:
-    - {label: "Name", name: "name", widget: "string"}
-    - {label: "Image", name: "img", widget: "image"}
-    - {label: "URL", name: "url", widget: "string"}
-  - label: "Links"
-    name: "links"
-    widget: "list"
-    fields:
-    - {label: "Text", name: "text", widget: "string"}
-    - {label: "URL", name: "url", widget: "string"}
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Brand"
+      name: "brand"
+      widget: "object"
+      fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "img", widget: "image"}
+      - {label: "URL", name: "url", widget: "string"}
+    - label: "Links"
+      name: "links"
+      widget: "list"
+      fields:
+      - {label: "Text", name: "text", widget: "string"}
+      - {label: "URL", name: "url", widget: "string"}
