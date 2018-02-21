@@ -8,4 +8,4 @@ import NavbarPreview from './preview-templates/NavBarPreview';
 CMS.registerPreviewStyle('/styles.css');
 CMS.registerPreviewTemplate('hex', HexPreview);
 CMS.registerPreviewTemplate('hexGrid', HexGridPreview);
-CMS.registerPreviewTemplate('navbar', NavbarPreview);
+CMS.registerPreviewTemplate('main', NavbarPreview);
