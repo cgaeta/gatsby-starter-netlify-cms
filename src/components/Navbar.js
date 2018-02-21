@@ -9,8 +9,8 @@ const Navbar = ({ brand, links }) => (
     <div className="container">
       <div className="navbar-brand">
         <Link to={brand.url} className="navbar-item">
-          {return brand.img ?
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} alt={brand.name} />
+          {brand.img ?
+            <img src={logo} style={{ width: '88px' }} alt={brand.name} />
             :
             <h1 className="brand">{brand.name}</h1>
           }
