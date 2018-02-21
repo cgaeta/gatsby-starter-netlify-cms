@@ -62,7 +62,7 @@ collections:
   files:
   - label: "Main Navbar"
     name: "main"
-    file: "/data/navbar.json"
+    file: "src/data/navbar.json"
     fields:
     - {label: "Title", name: "title", widget: "string"}
     - label: "Brand"
