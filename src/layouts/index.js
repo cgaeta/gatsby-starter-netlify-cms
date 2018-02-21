@@ -9,7 +9,6 @@ import '../components/Hex.scss';
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Home | Gatsby + Netlify CMS" />
-    <Navbar />
     <div>{children()}</div>
   </div>
 );
