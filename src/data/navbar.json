@@ -1,0 +1,14 @@
+{
+  "title": "my navbar",
+  "brand": {
+    "name": "My Brand",
+    "img": "",
+    "url": "/"
+  },
+  "links": [
+    {
+      "text": "Test",
+      "url": "/"
+    }
+  ]
+}
