@@ -8,7 +8,16 @@ import '../components/Hex.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet
+      title="ChrisGaetaUX"
+      meta={[
+        { itemprop: 'name', content: "ChrisGaetaUX" },
+        { name: 'description', content: "This is a test" },
+        { "http-equiv": "Content-Security-Policy", content: "default-src 'self'" },
+        { name: 'twitter:site', content: '@cgaeta' },
+        { name: 'twitter:title', content: "ChrisGaetaUX"},
+        { name: 'og:title', content: "ChrisGaetaUX"}
+      ]} />
     <div>{children()}</div>
   </div>
 );
